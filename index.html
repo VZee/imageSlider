@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Building a Simple JQuery Slider</title>
+  <link rel="stylesheet" href="slider.css">
+  <script type="text/javascript"
+  src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="slider.js"></script>
+</head>
+<body>
+  <div class = "wrapper">
+    <div id = "photos">
+      <img id = "1" class = "show" src = "https://lh3.googleusercontent.com/p1jURS5Vyt3S_030hoQ6Kmu3pcEYQBs9O2i-acyjEy4acunFrHQ31ETlpmgeD8TaLwwsV-NmZRHzau_CJNo4fhcOvvy0YmYVZEqBRGrv-GQfBpSt8suSLi70ie0rQp9lKR3lhfPMK2N9SBaQiDN1roLSYaAj_xd3s5UF1lDOt5RSS2IryNCBaF9JNT9ZBOlsUCw6nRjUj-umGlTSYxOPri9Ydq3evuylpYIRqc0tueOW86rDB60TewQu6G4bW9WJCLYPL9BMbUAkCleJ8kpqCBnKAJrcXa2y5gwm1TF4XVa2p17ynjWMic4YP3i6gGlgYJAwkVwGP6AaCEPPqfMSQqh4XSA9p206HgPDRepOSQX3w6nBMh91dATcXNz8iLAMFjoPyrnRkkokptEM332fRomEJWYgFgC_4POuy8qfK6tAVQMGNprIUS4WHxCmA3TCLvKetVG0WzD4aEWiFUf3yOWwfPAbZoAVfzh_kYLyhAhMnsNpAjOQH8BYltzJ3bTWkISjC0whkI0zcclvMEPnpYAk5xB0KcutTcPhZfwivoYgPikOih4HLlmYimGFl79WxYUwYpIIyCLTYnzzcJcPENI7dVwHZ-6iUy6nzVV4o0ISWZ71rD4v5UBVsA=w984-h1312-no">
+      <img id = "2" class = "hide" src = "https://lh3.googleusercontent.com/I5pqH3rrUNy1NbjmQ1q1cZk9e9EOuchk7EcUroZGUgqgGC-RdEIocBZ7Yej7SzNemSGwXhljYRUIJuhGIKiCvyKPU0VPGLv7o-b4LLmvx9hSFcqGmOxQR0XpcdsPKF5an1gT5UUTonBjjO1BXXw_T35jtxQtjjEbc1MAnBFIpTpui5No6YsOiYtNubMFvzxUBZLKpDZwSyO4_tnbZ0dYKvrGMebzSz00jAl2uBxHF239nTNTpXGkLuMhZeHvQfPUQqT6D_Fk-1im5vyOFWG5SUXU1sSFXJ73sAEQixwtklhfbMvFVJOPI73OmMghBYZynl956vTJON7Kb2tjlzqY5uuY4fRseRMG9WPp8ylPurcTiXrt3rjmHGJUQ9Gc_my9cmKCYjsAoMCjGLzr9c-j4qBctd2SCZsPJ710vnN6IzTeVt96Mjf9cuRJm_YsqGAWx-SrT3bKeW7EbvvPyjSNIsJ5vDhCylXNZoksknYfpT7absHknLUckfBF90nL9v5C93JBQdN1tptosn5N7qThkj-ejE44dZQFiqWzbPRPsQ3L-gfyT8JP5ZyqynpKN8KmN3N9Rlrj8-r7dxbVVTpM2Po1nm3luZqKneVYLHmdVd6TZ6d6_syJtd_c2A=w1750-h1312-no">
+      <img id = "3" class = "hide" src = "https://lh3.googleusercontent.com/vyGgUnISQjIqtbqj4i7m2ByQt0BdBVy1Y-pfOM6zbSIhtKcNAc1Y7HmYntBYrt8_rnGuQ0UxNdjBr1tC7PxaQ7KgiypCQE1aZXot8mfay6yp-rY4zPrlGfeJyFGaQKsT4lx9ZJilnv7Vg0X0e3NLxrvqtPq0BmiIJgJ2zjffcLrkJjmTSBYlvrqs92eqzmSDLd5zOX14hB6brbqJW8oGdOGg2oomKxn8Bl6QRuidHoy6-gH_bMRqEP9ty5PYm551Av6E2n4ujZAsZVLylgke_JhAA4JDWI6oavs-eyAIjAhB5KWXGaLbn6pJMOGFzYz1GFX6H4G-yvODOSWCrHsZFpBGAD00zfOQv0bUNc49O5flCxbCJ34FRHpYUWJtEBo7xH7ZAi9wocm-f9xk1XVSDZg4lBkKv8lpSQYtFxIJ0Qa-WDoAFTFdSbWgdQkilzuqg25-Cys1JttHQB0QrBJa9p0_BmXhx7cDY0BicIpLtc7EOE48ovZV-EljHAx-N0j-vQSBCNDxsMQbVjht78uhr83X7H3KSzWwpT4drLGowU_yhZcsLmwY9TYxSTObCKjLswgosEYxX-AedSN3tOvlg3I5xZXQMgxgZUaXS_11D9sXWURyyssp35gkBw=w984-h1312-no">
+      <img id = "4" class = "hide" src = "https://lh3.googleusercontent.com/9jAuCSvUrojIz0MODGv0cg63KQ1RkYMrdKmbuCH-WOXXonaP69nrORgJmq9KyVHGaCqFVQwRnHP4MrWyI_nJcMqYnLCcJxsFGzCVWU5VtSdG6y4kZh3xg-xgKTVnOxl7bPDCyZvih75R3rdnBObb2Fwk2VcSxaWY1mJyExRGqdG1_9oiIx6ifVGjriD8_OGKlqRU3To21G4m518K6hNuOGQZjiHgyquYIsezLGCV8XYZNXHNwLuyAhFxNkh8UAqKiJMwpD0wpEiaPM1vX6rPHtvBr9m4GQO7GdFe7opgR65f0HVCdMEKkJzjTFFKwY5PwKPkUrm2fzlUZGAM4fOP1j4pO9Q1phkn7E3DbziPHCeu_040cuY4Oxu3fnTirK3j7X_ncQqqINFij-BCPA3eMW7Wl7PD5evkfCDYMCGhaQZWY3zG7-NyrA0fEypoAvEOTWVhBdtXm8oJ5S4pV0H4W9BaarbTbvWJ_BdSpr7n3W3OnUh9Vt1vYrVY_2jHnt67eggkQDi--VjgNRZxqlIEVlsESU-UQAFYPjCF4v_lpiDd83448fr6jL5UEJlzCK4bP5RVrv38iJGAzdEIcAqWDMkAFZHGFQmVX9FcqRPtvib_B8hQE-Y7wtmloA=w984-h1312-no">
+    </div>
+    <div class = "center">
+      <button id = "previous" onclick = "previous()">Previous</button>
+      <button id = "next" onclick = "next()">Next</button>
+    </div>
+  </div>
+</body>
+</html>
